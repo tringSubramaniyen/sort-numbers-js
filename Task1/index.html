@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Task 1</title>
+    <link rel="stylesheet" type="text/css" href="Assets/css/form.css">
+    <script src="Assets/javascript/formvalidation.js"></script>
+  </head>  
+  <body>  
+    <div class="parentdiv">
+      <div class="child1">
+        <form name="fillform" >
+          <h2>Fill in the form</h2>
+          Name:<input id="name" name="ename" type="text" length="50px"><br>
+          E-mail:<input id="mail" name="email" type="text" length="50px"><br>
+          Mobile:<input id="num" name="mobile" type="text" length="50px"><br>
+          <button type="submit" onclick="FormValidate()">Submit</button>
+          <button type="reset">Reset</button>
+        </form>
+      </div>
+      <div class="jtable">
+        <table>
+          <thead>
+              <th>Name</th>
+              <th>E-mail</th>
+              <th>Mobile</th>
+              <th>Function</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="tableName">ABC</td>
+                <td id="tableMail">asdfasdfasdfasdf</td>
+                <td id="tableNumber">800808080000</td>
+                <td id="tableButton">
+                  <button onclick="editTD()">Edit</button>
+                  <button onclick="deleteTD()">Delete</button>
+                </td>
+              </tr>
+            </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
